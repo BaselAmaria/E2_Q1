@@ -31,4 +31,18 @@ public class AppTest
     	String result = App.GradesTest(20);
     	assertEquals(expected, result);
     }
+    
+    @Test
+    public void F_max_menos_1_test() {
+    	String expected = "F";
+    	String result = App.GradesTest(48);
+    	assertEquals(expected, result);
+    }
+    
+    @Test
+    public void F_max_test() {
+    	String expected = "F";
+    	String result = App.GradesTest(49);
+    	assertEquals(expected, result);
+    }
 }
