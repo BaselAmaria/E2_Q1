@@ -24,4 +24,11 @@ public class AppTest
     	String result = App.GradesTest(2);
     	assertEquals(expected, result);
     }
+    
+    @Test
+    public void F_nom_test() {
+    	String expected = "F";
+    	String result = App.GradesTest(20);
+    	assertEquals(expected, result);
+    }
 }
